@@ -1,12 +1,58 @@
-# React + Vite
+# 🔗 URL Shortener Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive frontend for the **URL Shortener** application.  
+This client allows users to shorten long URLs and access/manage their generated short links through a clean UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
+- **React / Next.js / Vite** (choose based on your setup)
+- **TailwindCSS** for styling
+- **Axios / Fetch API** for backend communication
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+
+```
+frontend/
+├── src/
+│   ├── components/     # UI components
+│   ├── pages/          # Routes / Screens
+│   ├── api.js          # API utilities
+│   └── App.jsx         # App entry point
+├── public/
+├── package.json
+└── README.md
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/url-shortener-frontend.git
+   cd url-shortener-frontend
+2. **Install dependencies**
+    ```bash
+    npm install
+    ```
+3. **Configure environment variables**
+    Create a .env file in the root:
+    ```bash
+    VITE_API_BASE_URL=https://url-shortener-backend-livid.vercel.app/
+    ```
+4. **Run development server**
+    ```bash
+    npm run dev
+    ```
+
+---
+
+## 📌 Features
+
+- Paste long URL to generate a short link
+- Copy-to-clipboard functionality
+- History of shortened links (if backend supports it)
+- Responsive design with TailwindCSS
